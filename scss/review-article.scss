@@ -1,0 +1,65 @@
+.review-article {
+  height: auto;
+  @include column-container;
+ #swiper-container {
+    height: auto;
+    margin: 30px;
+   @include column-container;
+   width: 90%;
+   overflow: hidden;
+    h1{
+    padding: 30px;
+    }
+    .blue-line {
+      width: 64px;
+      border-bottom: 2px solid #6696e2;
+      margin: 30px;
+    }
+    .swiper-wrapper {
+     @include center-container;
+     text-align: center;
+     width: 1000px;
+     padding-bottom: 40px;
+    }
+ 
+    .swiper-slide {
+      @include column-container;
+      
+    }
+    .review{
+      width: 273px;
+      @include column-container;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+     display: none;
+     transition: 0.3s;
+    }
+ 
+    p {
+      background-color: $color1;
+      border-radius: 10px;
+      width: 100%;
+      padding: 20px;
+      color: white;
+      text-align: left;
+    }
+   
+    h4 {
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+    h5 {
+      font-weight: 500;
+      color: #86878b;
+    }
+    .name-occupation {
+      width: 100%;
+      display: flex;
+      margin-top: 20px;
+      gap: 20px;
+      justify-content: left;
+      align-items: center;
+    }
+  }
+}

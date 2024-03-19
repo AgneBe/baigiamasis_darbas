@@ -1,0 +1,20 @@
+.social-media-container{
+  height: auto;
+  @include center-container;
+  
+ .social-media {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    p {
+      color: #86878b;
+    }
+    .left {
+      width: 30%;
+    }
+    .media{
+      @include center-container;
+      gap: 90px;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav #burger {
+    display: block;
+    transition: 0.6s;
+    margin: 30px;
+  }
+
+  .rotate {
+    transform: rotate(-90deg);
+  }
+
+  .links {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    background: #1c1c1c;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(calc(-100% - 60px));
+    transition: 0.6s;
+  }
+
+  .show-nav {
+    transform: translateY(25px);
+  }
+
+  .register {
+    display: flex;
+    flex-direction: column;
+
+    #registration {
+      padding: 20px;
+      width: 100%;
+    }
+    .subscription {
+      margin: 10px;
+    }
+  }
+  .social-media-container .social-media {
+    @include column-container;
+    padding-bottom: 15px;
+    .left {
+      width: 90%;
+      text-align: center;
+    }
+    .media {
+      gap: 20px;
+    }
+  }
+  .tabbs #tabbs1 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    .tabs-container {
+      width: auto;
+      padding: 10px;
+    }
+    .buttons {
+      float: none;
+      @include center-container;
+      width: auto;
+    }
+    .images {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+    }
+  }
+  .about #about1 {
+    @include column-container;
+    padding: 5px;
+    .logo {
+      @include column-container;
+      width: 100%;
+      img {
+        width: 90%;
+      }
+    }
+    .paragraph1 {
+      width: auto;
+      margin: 5px;
+    }
+  }
+  .recommendations #recommendations1 {
+    padding: 10px;
+    height: auto;
+    h1{
+      font-size: 2rem;
+    }
+    .ideas {
+      @include column-container;
+      padding: 10px;
+      .design {
+        width: 100%;
+        padding: 10px;
+      }
+      h3 {
+        padding: 0px;
+      }
+    }
+  }
+  .pricing #pricing1 .pricing-options {
+    padding: 0px;
+  }
+  .review-article #swiper-container {
+    width: 90%;
+    text-align: center;
+    h1 {
+      padding: 0px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+    display: none;
+    transition: 0.3s;
+   }
+   .blue-line{
+    margin-bottom: 40px;
+   }
+  }
+  footer #contact {
+    padding: 10px;
+    h1,
+    p {
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  .bottom {
+    display: block;
+    height: auto;
+    .media {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      padding: 20px;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.tabbs {
+  height: auto;
+  @include column-container;
+  background-image: linear-gradient(
+    270deg,
+    rgba(101, 149, 226, 0.419) 0%,
+    rgba(226, 120, 101, 0.419) 100%
+  ),
+  url("../images/image2.png");
+background-size: cover;
+background-position: center;
+#tabbs1 {
+    color: white;
+    @include center-container;
+    flex-direction: row;
+    height: auto;
+    width: 90%;
+  
+    .tab {
+      opacity: 0;
+      transition: 1s;
+    }
+    .tab.active {
+      opacity: 1;
+    }
+    .tabs-container {
+      width: 40%;
+    }
+    .buttons {
+      float: left;
+      width: 25%;
+    }
+    h4 {
+      transform: rotate(-45deg);
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .buttons button {
+      cursor: pointer;
+      border: none;
+      -webkit-box-shadow: 7px 5px 47px -18px rgba(0, 0, 0, 0.8);
+      -moz-box-shadow: 7px 5px 47px -18px rgba(0, 0, 0, 0.8);
+      box-shadow: 7px 5px 47px -18px rgba(0, 0, 0, 0.8);
+      width: 100px;
+      height: 100px;
+      background: rgba(163, 113, 105, 1);
+      color: white;
+      margin: 10px;
+      transition: 0.5s;
+    }
+    .tabs-container .selected-button {
+      background-color: $color3;
+      opacity: 1;
+    }
+    .images {
+      cursor: pointer;
+      gap: 20px;
+      width: 35%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: right;
+      
+      p {
+        display: none;
+      }
+      .img {
+        background-size: auto;
+        background-position: center;
+        width: 168px;
+        height: 168px;
+        @include center-container;
+        &:hover {
+          background-size: auto;
+          background-position: center;
+          p {
+            display: contents;
+          }
+        }
+      }
+      .img-1 {
+        background: url("../images/image3.png");
+        &:hover {
+          background: linear-gradient(rgba(226, 120, 101, 0.752)),
+           center url("../images/image3.png");
+        }
+      }
+      .img-2 {
+        background: url("../images/image4.png");
+        &:hover {
+          background: linear-gradient(rgba(226, 120, 101, 0.752)),
+           center url("../images/image4.png");
+        }
+      }
+      .img-3 {
+        background: url("../images/image5.png");
+        width: 362px;
+        height: 177px;
+        &:hover {
+          background: linear-gradient(rgba(226, 120, 101, 0.752)),
+           center url("../images/image5.png");
+      }
+    }
+  }
+}}

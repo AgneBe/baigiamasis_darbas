@@ -1,0 +1,64 @@
+.pricing{
+  height: auto;
+  @include column-container;
+  background: $color1;
+
+#pricing1 {
+  height: auto;
+  width: 90%;
+  text-align: center;
+  margin: 30px;
+
+  .pricing-options {
+   color: white;
+   padding: 60px;
+    img {
+    padding: 20px;
+    }
+   }
+  
+  .tables {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   flex-wrap: wrap;
+   gap: 40px;
+   }
+   .black {
+    width: 343px;
+    border-radius: 5px 5px 0 0;
+    background-color: $color4;
+    border-bottom: 5px solid $color2;
+    padding: 20px;
+    color: hsla(0, 0%, 100%, 1);
+      h1 {
+      font-weight: 400;
+        span {
+        font-size: 7rem;
+        }
+      }
+      h3 {
+      font-weight: 400;
+      }
+      h5 {
+        font-weight: 400;
+        color: hsla(0, 0%, 100%, 1);
+      }
+    }
+    .green {
+      background-color: #41d395;
+      width: 343px;
+      height: 40px;
+      color: white;
+    }
+    .list {
+      background-color: white;
+      width: 343px;
+      border-radius: 0 0 5px 5px;
+      li {
+        padding: 10px;
+        list-style: none;
+      }
+    }
+  }
+}

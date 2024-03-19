@@ -1,0 +1,46 @@
+.about{
+  height: auto;
+  @include column-container;
+  background: $color4;
+#about1 {
+    color: rgba(255, 255, 255, 1);
+    @include center-container;
+    width: 90%;
+    margin: 30px;
+  
+  .logo {
+    width: 35%;
+    margin: 20px;
+  }
+  .paragraph1{
+    width: 35%;
+    margin: 20px;
+    .text1{
+      margin-bottom: 20px;
+    }
+    #heading{
+      font-size: 2rem;
+     }
+    .paragraph2 {
+    display: flex;
+    flex-direction: column;
+    .text2 {
+     display: flex;
+     margin-bottom: 20px;
+     .title-text {
+      padding-left: 30px;
+      }
+    }
+      .circle {
+        background-color: #e27866;
+        width: 55px;
+        height: 55px;
+        padding: 15px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        }
+      }
+    }
+  }
+}

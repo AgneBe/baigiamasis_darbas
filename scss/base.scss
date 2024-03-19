@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Montserrat, SemiBold;
+    padding-top: 50px;
+    h1{
+      @include h1-font;
+    }
+    h2{
+      @include h2-font;
+    }
+    h3 {
+      @include h3-font;
+    }
+    p{
+      @include p-font;
+    }
+  }

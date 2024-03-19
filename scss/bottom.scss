@@ -1,0 +1,14 @@
+.bottom {
+    background-color: $color4;
+    display: flex;
+    justify-content: space-around;
+    color: hsla(0, 0%, 100%, 1);
+    height: 120px;
+    .right {
+      @include center-container;
+    }
+    .media{
+      @include center-container;
+      gap: 90px;
+    }
+  }
